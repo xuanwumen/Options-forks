@@ -59,7 +59,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset
 svn co https://github.com/pymumu/openwrt-smartdns/trunk ./smartdns
 
 
-curl -fsSL  https://raw.githubusercontent.com/281677160/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
+curl -fsSL  https://raw.githubusercontent.com/MCyida/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' ./luci-app-argon-config/po/zh-cn/argon-config.po
 sed -i "s/bing_background '0'/bing_background '1'/g" ./luci-app-argon-config/root/etc/config/argon
 
