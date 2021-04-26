@@ -32,7 +32,7 @@ jobs:
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install git subversion git-core wget
         sudo timedatectl set-timezone "$TZ"
-        git config --global user.email "2077852+github-actions[bot]@users.noreply.github.com"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         
     - name: Clone packages
