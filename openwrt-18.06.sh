@@ -11,7 +11,7 @@ svn co https://github.com/281677160/openwrt-package/branches/tladg/luci-app-adgu
 git clone https://github.com/linkease/ddnsto-openwrt && mv ddnsto-openwrt/* ./
 
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' ./luci-app-argon-config/po/zh-cn/argon-config.po
-curl -fsSL https://raw.githubusercontent.com/MCyida/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
+curl -fsSL https://raw.githubusercontent.com/mcydia/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
 sed -i "s/bing_background '0'/bing_background '1'/g" ./luci-app-argon-config/root/etc/config/argon
 
 rm -rf ./*/.git
