@@ -5,6 +5,7 @@ git clone https://github.com/rosywrt/luci-theme-rosy
 svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 ./luci-theme-edge
 svn co https://github.com/garypang13/luci-app-dnsfilter/trunk ./luci-app-dnsfilter
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
+svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato
 
 svn co https://github.com/immortalwrt/openwrt-gowebdav/trunk ./
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-gost
@@ -76,6 +77,7 @@ sed -i "s/bing_background '0'/bing_background '1'/g" ./luci-app-argon-config/roo
 
 # 生成完整目录清单
 cat >> Update.md <<EOF
+luci-theme-opentomato
 luci-theme-atmaterial
 luci-theme-rosy
 luci-theme-edge
