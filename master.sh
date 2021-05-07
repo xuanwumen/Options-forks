@@ -67,8 +67,8 @@ svn co https://github.com/jerrykuku/lua-maxminddb/trunk ./lua-maxminddb
 svn co https://github.com/fszok/luci-app-onliner/trunk ./luci-app-onliner
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
-svn co https://github.com/ntlf9t/luci-app-oscam/trunk ./luci-app-oscam
-svn co https://github.com/ntlf9t/openwrt_oscam/trunk ./openwrt_oscam
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-oscam
+svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/oscam
 
 curl -fsSL  https://raw.githubusercontent.com/mcydia/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' ./luci-app-argon-config/po/zh-cn/argon-config.po
