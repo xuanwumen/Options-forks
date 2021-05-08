@@ -1,6 +1,5 @@
 #!/bin/bash
 
-svn co https://github.com/jerrykuku/luci-theme-argon/trunk ./luci-theme-argon
 svn co https://github.com/tuanqing/install-program/trunk ./install-program
 svn co https://github.com/281677160/openwrt-package/branches/tladg/luci-app-adguardhome
 
