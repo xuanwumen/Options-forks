@@ -1,6 +1,7 @@
 #!/bin/bash
 
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial
+svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato
 git clone https://github.com/rosywrt/luci-theme-rosy
 svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 ./luci-theme-edge
 svn co https://github.com/garypang13/luci-app-dnsfilter/trunk ./luci-app-dnsfilter
@@ -10,7 +11,7 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
 svn co https://github.com/lwz322/luci-app-k3screenctrl/trunk ./luci-app-k3screenctrl
 svn co https://github.com/lwz322/k3screenctrl/trunk ./k3screenctrl
 svn co https://github.com/lwz322/k3screenctrl_build/trunk ./k3screenctrl_build
-svn co https://github.com/siropboy/sirpdboy-package/trunk/luci-app-koolproxyR
+svn co https://github.com/siropboy/sirpdboy-package/trunk/uci-app-koolproxyR
 svn co https://github.com/siropboy/sirpdboy-package/trunk/luci-theme-opentomcat
 git clone https://github.com/koshev-msk/luci-app-modeminfo
 svn co https://github.com/siropboy/sirpdboy-package/trunk/luci-app-netdata
@@ -47,8 +48,8 @@ svn co https://github.com/jerrykuku/luci-app-ttnode/trunk ./luci-app-ttnode
 svn co https://github.com/zzsj0928/luci-app-serverchand/trunk ./luci-app-serverchand
 svn co https://github.com/siropboy/sirpdboy-package/trunk/luci-app-socat
 svn co https://github.com/pymumu/openwrt-smartdns/trunk/smartdns
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ntlf9t/luci-app-oscam
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ntlf9t/oscam
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-oscam
+svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/oscam
 svn co https://github.com/jerrykuku/lua-maxminddb/trunk ./lua-maxminddb
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/v2ray
 svn co https://github.com/CCnut/feed-netkeeper/branches/LUCI-LUA-UCITRACK ./luci-app-netkeeper-interception
