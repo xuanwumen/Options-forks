@@ -34,7 +34,7 @@ svn co https://github.com/garypang13/openwrt-packages/trunk/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/cpulimit
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-cpulimit
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
-
+svn co https://github.com/ntlf9t/luci-app-easymesh.git
 
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset
@@ -70,7 +70,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
 svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-oscam
 svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/oscam
 
-curl -fsSL  https://raw.githubusercontent.com/mcydia/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
+curl -fsSL  https://raw.githubusercontent.com/281677160/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' ./luci-app-argon-config/po/zh-cn/argon-config.po
 sed -i "s/bing_background '0'/bing_background '1'/g" ./luci-app-argon-config/root/etc/config/argon
 
@@ -82,6 +82,7 @@ luci-theme-atmaterial
 luci-theme-rosy
 luci-theme-edge
 luci-theme-infinityfreedom
+luci-app-easymesh
 luci-app-filebrowser
 luci-app-gowebdav
 luci-app-smartinfo
