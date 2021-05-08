@@ -34,7 +34,7 @@ svn co https://github.com/garypang13/openwrt-packages/trunk/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/cpulimit
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-cpulimit
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
-svn co https://github.com/ntlf9t/luci-app-easymesh.git
+git clone https://github.com/ntlf9t/luci-app-easymesh
 
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset
