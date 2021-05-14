@@ -1,9 +1,7 @@
-#!/bin/bash
-
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial
-svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato
 git clone https://github.com/rosywrt/luci-theme-rosy
 svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 ./luci-theme-edge
+svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato
 svn co https://github.com/garypang13/luci-app-dnsfilter/trunk ./luci-app-dnsfilter
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos
@@ -48,8 +46,6 @@ svn co https://github.com/jerrykuku/luci-app-ttnode/trunk ./luci-app-ttnode
 svn co https://github.com/zzsj0928/luci-app-serverchand/trunk ./luci-app-serverchand
 svn co https://github.com/siropboy/sirpdboy-package/trunk/luci-app-socat
 svn co https://github.com/pymumu/openwrt-smartdns/trunk/smartdns
-svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-oscam
-svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/oscam
 svn co https://github.com/jerrykuku/lua-maxminddb/trunk ./lua-maxminddb
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/v2ray
 svn co https://github.com/CCnut/feed-netkeeper/branches/LUCI-LUA-UCITRACK ./luci-app-netkeeper-interception
@@ -58,6 +54,9 @@ svn co https://github.com/281677160/AdGuardHome/trunk/luci-app-adguardhome
 git clone https://github.com/linkease/ddnsto-openwrt && mv ddnsto-openwrt/* ./
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset
 svn co https://github.com/pymumu/openwrt-smartdns/trunk ./smartdns
+svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-oscam
+svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/oscam
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ttyd
 
 
 curl -fsSL  https://raw.githubusercontent.com/mcydia/openwrt-package/usb/argon/footer.htm > ./luci-theme-argon/luasrc/view/themes/argon/footer.htm
