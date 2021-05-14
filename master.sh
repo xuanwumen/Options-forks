@@ -1,11 +1,11 @@
 #!/bin/bash
+svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial
 svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06/applications/luci-app-syncthing
 git clone https://github.com/rosywrt/luci-theme-rosy
 svn co https://github.com/garypang13/luci-theme-edge/branches/18.06 ./luci-theme-edge
 svn co https://github.com/garypang13/luci-app-dnsfilter/trunk ./luci-app-dnsfilter
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
-svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato
 
 svn co https://github.com/immortalwrt/openwrt-gowebdav/trunk ./
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-gost
@@ -34,7 +34,7 @@ svn co https://github.com/garypang13/openwrt-packages/trunk/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/cpulimit
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-cpulimit
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
-git clone https://github.com/ntlf9t/luci-app-easymesh
+
 
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset
@@ -56,8 +56,6 @@ svn co https://github.com/siropboy/sirpdboy-package/trunk/luci-app-socat
 svn co https://github.com/pymumu/luci-app-smartdns/branches/lede ./luci-app-smartdns
 svn co https://github.com/pymumu/openwrt-smartdns/trunk ./smartdns
 
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ntlf9t/luci-app-oscam
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ntlf9t/oscam
 svn co https://github.com/CCnut/feed-netkeeper/branches/LUCI-LUA-UCITRACK ./luci-app-netkeeper-interception
 svn co https://github.com/281677160/AdGuardHome/trunk/adguardhome
 svn co https://github.com/281677160/AdGuardHome/trunk/luci-app-adguardhome
