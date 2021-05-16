@@ -74,7 +74,6 @@ sed -i "s/bing_background '0'/bing_background '1'/g" ./luci-app-argon-config/roo
 
 # 生成完整目录清单
 cat >> Update.md <<EOF
-luci-theme-opentomato
 luci-theme-atmaterial
 luci-theme-rosy
 luci-theme-edge
