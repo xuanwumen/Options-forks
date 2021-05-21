@@ -10,7 +10,6 @@
 ###### [luci-theme-opentomcat](#/README.md)  &nbsp;&nbsp;&nbsp;&nbsp;#主题-opentomcat
 ###### [luci-theme-opentopd](#/README.md)  &nbsp;&nbsp;&nbsp;&nbsp;#主题-opentopd<br>
 ###### [luci-theme-atmaterial](#/README.md)  &nbsp;&nbsp;&nbsp;&nbsp;#atmaterial-主题<br>
-###### [luci-theme-rosy](#/README.md)   &nbsp;&nbsp;&nbsp;&nbsp;#主题-rosy<br>
 ###### [luci-theme-infinityfreedom](#/README.md)   &nbsp;&nbsp;&nbsp;&nbsp;#透明主题<br>
 ###### [luci-app-serverchan](#/README.md)    &nbsp;&nbsp;&nbsp;&nbsp;#微信推送<br>
 ###### [luci-app-eqos](#/README.md)   &nbsp;&nbsp;&nbsp;&nbsp;#内网控速 内网IP限速工具，和Turbo ACC 网络加速有冲突<br>
