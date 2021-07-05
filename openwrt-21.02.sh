@@ -1,3 +1,4 @@
+#!/bin/bash
 svn co https://github.com/281677160/openwrt-package/trunk ./
 
 # 生成完整目录清单
