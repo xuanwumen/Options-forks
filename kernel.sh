@@ -1,17 +1,10 @@
 #!/bin/bash
 
-svn co https://github.com/281677160/openwrt-package/trunk ./
+svn co https://github.com/danshui-git/amlogic-s9xxx-openwrt/trunk/amlogic-s9xxx/amlogic-kernel kernel
 
-rm -rf ./*/.git
-rm -rf ./*/.svn
-rm -rf ./*/*/.svn
-rm -rf ./*/*/.git
-
-rm -rf ./ReadMe.md
-rm -rf ./*/ReadMe.md
-rm -rf ./*/README.md
-rm -rf ./*/LICENSE
-rm -rf .svn
-rm -rf ./*/readme.txt
-rm -f .gitattributes .gitignore
+# 删除拉取插件后残留的.git和.svn,再随带删除各种README说明
+find ./*/ -name '.git' | xargs -i rm -rf {}
+find . -name '.svn' | xargs -i rm -rf {}
+find . -name '*.md' -o -name 'LICENSE' | xargs -i rm -rf {}
+find . -name '.gitattributes' -o -name '.gitignore' | xargs -i rm -rf {}
 exit 0
