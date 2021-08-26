@@ -89,7 +89,7 @@ svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/themes/lu
 svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/themes/luci-theme-opentomcat feeds/luci/themes/luci-theme-opentomcat
 svn co https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/themes/luci-theme-rosy feeds/luci/themes/luci-theme-rosy
 svn co https://github.com/jerrykuku/luci-theme-argon/branches/18.06 feeds/luci/themes/luci-theme-argon
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial feeds/luci/themes/luci-theme-atmaterial
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial_new feeds/luci/themes/luci-theme-atmaterial_new
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-opentomato feeds/luci/themes/luci-theme-opentomato
 svn co https://github.com/apollo-ng/luci-theme-darkmatter/trunk  package/luci-theme-darkmatter
 svn co https://github.com/Aslin-Ameng/luci-theme-Light/trunk feeds/luci/themes/luci-theme-Light
@@ -180,7 +180,7 @@ luci-app-timecontrol
 luci-app-ttnode
 luci-app-vssr
 luci-theme-argon
-luci-theme-atmaterial
+luci-theme-atmaterial_new
 luci-theme-infinityfreedom
 luci-theme-opentomcat
 luci-theme-opentomato
@@ -227,8 +227,14 @@ echo 缺失包列表
 FOLDERS=`grep -Fxvf UpdateList.md Update.md`
 FOLDERSX=`echo $FOLDERS | sed 's/ /、/g'`;echo $FOLDERSX
 
+#TG通知
+if [ -n "$FOLDERS" ]; then  curl "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" -d "chat_id=$TELEGRAM_CHAT_ID&text=🚫源码同步失败，分支：Package_$matrix_target，失败列表：$FOLDERSX......"; else curl "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage" -d "chat_id=$TELEGRAM_CHAT_ID&text=🎉源码同步成功，分支：Package_$matrix_target......"; fi
+
 # 判断变量值，如果有效发送微信通知
 if [ -n "$FOLDERS" ]; then  curl https://sc.ftqq.com/$SCKEY.send?text=$FOLDERSX--同步失败; fi
+
+
 # 删除对比更新目录列表
 rm -rf {UpdateList.md,Update.md}
 exit 0
+
